@@ -23,8 +23,7 @@ namespace Examen1GuillermoGaitan
         Console.ReadLine();
         }
 
-
-
+        
 
     }
 }

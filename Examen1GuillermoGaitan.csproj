@@ -52,6 +52,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tipo.cs" />
     <Compile Include="Vehiculos.cs" />
+    <Compile Include="Vendedor1.cs" />
+    <Compile Include="Vendedor2.cs" />
     <Compile Include="Vendedores.cs" />
     <Compile Include="Ventas.cs" />
   </ItemGroup>
