@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace Examen1GuillermoGaitan
 {
-    internal class Program
+    static class Menu
     {
-        static void Main(string[] args)
+        static Menu() { }
+
+        public static void MuestraMenu() 
         {
-            Menu.MuestraMenu();
-            Console.Read();
+
+            Console.WriteLine("Si llega a Menu");
+
+
+
         }
+
     }
 }
