@@ -9,10 +9,13 @@ namespace Examen1GuillermoGaitan
     static class Menu
     {
         static Menu() { }
+        
 
         public static void MuestraMenuPrincipal() 
         {
             byte option = 1;
+            
+
 
             do {
 
@@ -26,11 +29,11 @@ namespace Examen1GuillermoGaitan
                 Console.Clear();
                 
 
-                switch(option){ 
+                switch (option){ 
                 
                 case 1: SubMenuVehiculos(); break;
-                case 2: break;
-                case 3: break;
+                case 2:  break;
+                case 3: SubMenuReportes();  break;
                 case 4: Console.Write(" Hasta Luego, gracias por usar nuestro sistema!"); break;
 
                 }
@@ -59,7 +62,7 @@ namespace Examen1GuillermoGaitan
                 switch (optionS)
                 {
                     case 1: V.AgregarVehiculos(); break;
-                    case 2:  break;
+                    case 2: V.ModificarVehiculo(); break;
                     case 3: V.ConsultarVehiculo(); break;
                     case 4: MuestraMenuPrincipal(); break;
                     case 5: Console.Write("Gracias por haber usado nuestro Sistema!\n" +
@@ -104,5 +107,45 @@ namespace Examen1GuillermoGaitan
             Console.Read();
             Environment.Exit(0);
         }
+
+
+        public static void SubMenuReportes()
+        {
+            byte optionS = 1;
+
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Submenu Reportes");
+                Console.WriteLine("1.- Todos los vendedores\n" +
+                    "2.- Listado de Tipos\n" +
+                    "3.- Listado de Vehiculos\n");
+                Console.Write("Por favor seleccione una opción: ");
+                optionS = byte.Parse(Console.ReadLine());
+                Console.Clear();
+                switch (optionS)
+                {
+                    case 1:
+                        Vendedores vende = new Vendedores();
+                        vende.ListadoVendedores(); 
+                        break;
+                    case 2: Tipo tipo = new Tipo();
+                        tipo.Listado();
+                        
+                        break;
+                    case 3: break;
+                    case 4: MuestraMenuPrincipal(); break;
+                    case 5:
+                        Console.Write("Gracias por haber usado nuestro Sistema!\n" +
+                                          "Hasta luego!");
+                        Console.Read();
+                        break;
+                }
+            } while (optionS != 5);
+            Console.Read();
+            Environment.Exit(0);
+        }
+
+
     }
 }
