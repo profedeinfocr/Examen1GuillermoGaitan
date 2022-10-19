@@ -21,7 +21,7 @@ namespace Examen1GuillermoGaitan
 
                 Console.WriteLine("Menu Principal");
                 Console.WriteLine("1.- Vehiculos\n" +
-                    "2.- Ventas\n" +
+                    "2.- Ventas (No funciona)\n" +
                     "3.- Reportes\n" +
                     "4.- Salir\n");
                 Console.Write("Por favor seleccione una opción: ");
