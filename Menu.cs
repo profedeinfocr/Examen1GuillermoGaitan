@@ -41,6 +41,7 @@ namespace Examen1GuillermoGaitan
 
         public static void SubMenuVehiculos() 
         {
+            Vehiculos V = new Vehiculos();
             byte optionS = 1;
 
             do
@@ -57,7 +58,7 @@ namespace Examen1GuillermoGaitan
                 Console.Clear();
                 switch (optionS)
                 {
-                    case 1: break;
+                    case 1: V.agregarVehiculos(); break;
                     case 2: break;
                     case 3: break;
                     case 4: MuestraMenuPrincipal(); break;
@@ -69,10 +70,39 @@ namespace Examen1GuillermoGaitan
             } while (optionS != 5);
             Console.Read();
             Environment.Exit(0);
-
-
-
         }
 
+        public static void SubMenuVentas()
+        {
+            byte optionS = 1;
+
+            do
+            {
+
+                Console.WriteLine("Submenu Ventas");
+                Console.WriteLine("1.- Agregar\n" +
+                    "2.- Modificar\n" +
+                    "3.- Consultar\n" +
+                    "4.- Volver al menu principal\n" +
+                    "5.- Salir\n");
+                Console.Write("Por favor seleccione una opción: ");
+                optionS = byte.Parse(Console.ReadLine());
+                Console.Clear();
+                switch (optionS)
+                {
+                    case 1: break;
+                    case 2: break;
+                    case 3: break;
+                    case 4: MuestraMenuPrincipal(); break;
+                    case 5:
+                        Console.Write("Gracias por haber usado nuestro Sistema!\n" +
+                                          "Hasta luego!");
+                        Console.Read();
+                        break;
+                }
+            } while (optionS != 5);
+            Console.Read();
+            Environment.Exit(0);
+        }
     }
 }
