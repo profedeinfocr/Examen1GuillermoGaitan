@@ -58,9 +58,9 @@ namespace Examen1GuillermoGaitan
                 Console.Clear();
                 switch (optionS)
                 {
-                    case 1: V.agregarVehiculos(); break;
-                    case 2: break;
-                    case 3: break;
+                    case 1: V.AgregarVehiculos(); break;
+                    case 2:  break;
+                    case 3: V.ConsultarVehiculo(); break;
                     case 4: MuestraMenuPrincipal(); break;
                     case 5: Console.Write("Gracias por haber usado nuestro Sistema!\n" +
                                           "Hasta luego!");
