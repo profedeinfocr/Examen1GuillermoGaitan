@@ -119,7 +119,8 @@ namespace Examen1GuillermoGaitan
                 Console.WriteLine("Submenu Reportes");
                 Console.WriteLine("1.- Todos los vendedores\n" +
                     "2.- Listado de Tipos\n" +
-                    "3.- Listado de Vehiculos\n");
+                    "3.- \n"
+                    +"4.- Volver a Menu Principal\n" );
                 Console.Write("Por favor seleccione una opción: ");
                 optionS = byte.Parse(Console.ReadLine());
                 Console.Clear();
@@ -141,7 +142,7 @@ namespace Examen1GuillermoGaitan
                         Console.Read();
                         break;
                 }
-            } while (optionS != 5);
+            } while (optionS != 3);
             Console.Read();
             Environment.Exit(0);
         }
