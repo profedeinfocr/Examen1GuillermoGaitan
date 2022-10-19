@@ -8,7 +8,7 @@ namespace Examen1GuillermoGaitan
 {
     internal class Vehiculos
     {
-
+        public Vehiculos(){}
         public void agregarVehiculos()
         {
             string[] arrayCodigo = new string[5];
@@ -35,13 +35,11 @@ namespace Examen1GuillermoGaitan
                 Console.WriteLine("Info del vehiculo #" + (i+1));
                 Console.WriteLine(arrayCodigo[i] + " " + arrayMarca[i] + " " + arrayCosto[i] + " " + arrayModelo[i]);
             }
-            Console.WriteLine(" Oprima enter para regresar al sub menu Vehiculos\n");
+            Console.WriteLine("\nOprima enter para regresar al sub menu Vehiculos\n");
             Console.ReadLine();
             Console.Clear();
 
         }//Fin de agregarVehiculo
-
-
 
     }
 }
