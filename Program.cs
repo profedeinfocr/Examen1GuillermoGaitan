@@ -10,7 +10,7 @@ namespace Examen1GuillermoGaitan
     {
         static void Main(string[] args)
         {
-            Menu.MuestraMenu();
+            Menu.MuestraMenuPrincipal();
             Console.Read();
         }
     }
